@@ -1,6 +1,6 @@
 import mongoose, { Schema, Document, Date } from 'mongoose';
 
-import { IUserModel } from './user';
+import { IUserModel } from './User';
 import { IArticleModel } from './Article'
 
 export interface ICommentModel extends Document {

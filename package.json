@@ -8,6 +8,7 @@
     "compile": "ts-node build.ts && tsc",
     "dev": "nodemon --config nodemon.json server/index.ts | pino-pretty",
     "dev:debug": "nodemon --exec 'node -r ts-node/register --inspect-brk' server/index.ts | pino-pretty",
+    "lint":"nx workspace-lint && ng lint",
     "test": "mocha test/**/*.ts --exit",
     "test:debug": "mocha --inspect-brk test/**/*.ts --exit"
   },
